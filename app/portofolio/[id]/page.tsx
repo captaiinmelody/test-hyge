@@ -1,14 +1,14 @@
 'use client'
 
 import ButtonText from '@/components/ButtonText'
-import CategoryButton from '@/components/portofolio/CategoryButton';
+import CategoryButton from '@/app/portofolio/CategoryButton';
 import { OUR_PORTOFOLIO, OUR_PORTOFOLIO_CATEGORY, TECH_STACK } from '@/constants';
 import styles from '../portofolioPage.module.css'
 import Image from 'next/image';
 import { useRouter, useParams } from 'next/navigation'
 import React, { useState } from 'react'
 import Button from '@/components/Button';
-import ClientsCard from '@/components/clients/ClientsCard';
+import ClientsCard from '@/app/clients/ClientsCard';
 import Link from 'next/link';
 
 const PortofolioDetail: React.FC = () => {

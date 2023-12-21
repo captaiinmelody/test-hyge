@@ -2,7 +2,7 @@
 
 import ButtonText from '@/components/ButtonText'
 import TitleText from '@/components/TitleText'
-import ClientsCard from '@/components/clients/ClientsCard'
+import ClientsCard from '@/app/clients/ClientsCard'
 import { OUR_CLIENTS } from '@/constants'
 import { usePathname, useRouter } from 'next/navigation'
 import React from 'react'

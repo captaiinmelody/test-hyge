@@ -2,8 +2,8 @@
 // Import necessary modules and types
 import React, { useEffect, useState } from 'react';
 import { OUR_PORTOFOLIO_CATEGORY, OUR_PORTOFOLIO } from '@/constants';
-import CategoryButton from '@/components/portofolio/CategoryButton';
-import PortofolioCard from '@/components/portofolio/PortofolioCard';
+import CategoryButton from '@/app/portofolio/CategoryButton';
+import PortofolioCard from '@/app/portofolio/PortofolioCard';
 import Button from '@/components/Button';
 import { useRouter, usePathname } from 'next/navigation';
 import ButtonText from '@/components/ButtonText';
