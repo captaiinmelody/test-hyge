@@ -19,15 +19,16 @@ const Navbar = () => {
     const handleClick = () =>  alert("you click the button")
   
     return (
-      <div className="fixed w-screen z-30 padding-container bg-blue-950 bg-opacity-95">
+      
+      <div className="fixed w-screen z-30 padding-container bg-slate-900">
         <nav className={`flexBetween py-5`}>
         <Link href="/">
           <Image src="/hyge-logo.png" alt="logo" width={128} height={128} />
         </Link>
   
         {/* Mobile Navigation */}
-        <div className="relative lg:hidden flex">
-          <Button type="button" title="Let's Talk" variant="bg-blue-500" />
+        <div className="relative flex mx-6 lg:hidden">
+          <Button type="button" title="Let's Talk" variant="bg-gradient-to-r from-blue-500 via-sky-700 to-blue-500" />
           <Image 
             src="/ci_menu-duo-lg.svg"
             alt='menu'
@@ -39,9 +40,9 @@ const Navbar = () => {
         </div>
   
         {/* Desktop Navigation */}
-        <ul className="hidden h-full lg:flex bgGrayOpacity text-white">
+        <ul className="hidden h-full lg:flex bg-blue-100 bg-opacity-10 rounded-full text-white">
           {NAV_LINKS.map((link) => (
-            <li key={link.key} className={`regular-16 flexCenter cursor-pointer transition-all ${pathname === link.href || pathname === `${link.href}/1` ? 'bg-blue-500' : ''} hover:bg-blue-700 p-4 rounded-full`}>
+            <li key={link.key} className={`regular-16 flexCenter cursor-pointer transition-all ${pathname === link.href || pathname === `${link.href}/1` ? 'bg-blue-500' : ''} hover:bg-blue-500 p-4 rounded-full`}>
               <Link href={link.href}>
                 {link.label}
               </Link>
@@ -54,7 +55,7 @@ const Navbar = () => {
             type="button"
             title="Let's Talk"
             onClick={handleClick}
-            variant="bgGrayOpacity"
+            variant="opacity-60 bg-gray-600"
           />
         </div>
       </nav>
@@ -67,7 +68,7 @@ const Navbar = () => {
               <Image src="/hyge-logo.png" alt="logo" width={128} height={128} />
             </Link>
             <div className='flex'>
-              <Button type="button" title="Let's Talk" variant="bg-blue-500" />
+              <Button type="button" title="Let's Talk" variant="bg-gradient-to-r from-blue-500 via-sky-700 to-blue-500" />
               <Image 
                 src="/ci_menu-duo-lg.svg"
                 alt='menu'

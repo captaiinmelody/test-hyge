@@ -9,6 +9,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import ButtonText from '@/components/ButtonText';
 import TitleText from '@/components/TitleText';
 import Link from 'next/link';
+import DescriptionText from '@/components/DescriptionText';
 
 // Define the component
 const Portofolio: React.FC = () => {
@@ -45,10 +46,14 @@ const Portofolio: React.FC = () => {
   };
 
   return (
+    
     <div>
         {pathname !== '/' && <ButtonText label='Go Back' icon='/ph_arrow-left.svg' onClick={router.back} />}
-        <TitleText href='/portofolio' titleDefault='Our' titleColor='Clients' description='As your digital partner, we collaborate with you to drive innovation, stay ahead of the curve, and deliver real impact for your business.' />
-      <div className='flexStart overflow-x-auto'>
+        <TitleText href='/portofolio' titleDefault='Our' titleColor='Portofolio' />
+        <div className='w-2/3 mt-12'>
+          <DescriptionText description='As your digital partner, we collaborate with you to drive innovation, stay ahead of the curve, and deliver real impact for your business.'/>
+        </div>
+      <div className='flexStart overflow-x-auto mt-12'>
         {OUR_PORTOFOLIO_CATEGORY.map((p) => (
           <button
             key={p.id}
@@ -57,7 +62,7 @@ const Portofolio: React.FC = () => {
               handleClick(p.href);
             }}
           >
-            <CategoryButton category={p.name} href={p.href} variant={p.href === currentCategory ? 'bg-blue-500' : 'bg-gray-700/50'} />
+            <CategoryButton category={p.name} href={p.href} variant={p.href === currentCategory ? 'bg-blue-600' : 'bg-gray-200/10'} />
           </button>
         ))}
       </div>

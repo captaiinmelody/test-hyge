@@ -14,7 +14,7 @@ const CategoryButton = ({category, href, variant}: CategoryButtonProps) => {
     <Link
       href={href}
       passHref
-      className="flexCenter rounded-full mr-4"
+      className="flexCenter rounded-full mr-4 mb-4"
     >
       <label 
       className={`regular-14 py-2 px-4 rounded-full ${styles.btn_category_default} hover:bg-blue-500 ${variant}`}

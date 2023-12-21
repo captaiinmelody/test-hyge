@@ -1,7 +1,7 @@
 .btn_category_default {
-    @apply border border-gray-500/25 cursor-pointer
+    @apply border border-white border-opacity-20 cursor-pointer
 }
 
 .btn_category_inside_card {
-    @apply text-blue-400/70 border border-blue-400/70 bg-gradient-to-b from-white/5 to-black/10
+    @apply text-blue-500 bg-gradient-to-t from-black/5 to-white/5 border border-sky-500
 }

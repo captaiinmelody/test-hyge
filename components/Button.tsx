@@ -10,9 +10,9 @@ type ButtonProps = {
 
 const Button = ({type, title, icon, variant, onClick} : ButtonProps) => {
   return (
-    <button type={type} className={`flexCenter rounded-full ${variant} hover:bg-blue-700`} onClick={onClick}>
+    <button type={type} className={`flexCenter rounded-full ${variant} hover:bg-blue-500`} onClick={onClick}>
         {icon && <Image src={icon} alt="icon" width={24} height={24} />}
-        <label className="whitespace-nowrap cursor-pointer text-gray-300 p-4">{title}</label>
+        <label className="whitespace-nowrap cursor-pointer p-4">{title}</label>
     </button>
   )
 }

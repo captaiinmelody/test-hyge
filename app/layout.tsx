@@ -17,9 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-gradient-to-b from-blue-950 to-black text-white '>
+      <body className='text-white font-["Plus Jakarta Sans"] bg-gradient-to-b from-slate-900 to-neutral-900'>
         <Navbar />
-        <main className='p-8 lg:px-64 py-32'>
+        <main className='p-8 z-10 lg:px-64 py-32'>
             {children}
         </main>
         <Footer />

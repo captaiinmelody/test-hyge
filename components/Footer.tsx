@@ -5,18 +5,18 @@ import Button from "./Button";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black py-10 text-white">
-      <div className="max-container mx-auto padding-container relative z-30">
-        <div className='text-center mb-32'>
-          <p className="medium-32">We can help to improve your business</p>
-          <p className="medium-32 text-blue-500">by upgrading your technology!</p>
+    <footer className="bg-black/5 py-10 text-white">
+      <div className="max-container mx-auto padding-container relative z-20">
+        <div className='text-center mb-32 z-20'>
+          <p className="medium-48">We can help to improve your business</p>
+          <p className="medium-48 text-blue-500">by upgrading your technology!</p>
           <p className="regular-16 py-10 text-gray-500">Schedule a free 30 mins calls with us</p>
-          <div className="flexCenter medium-16">
+          <div className="flexCenter medium-16 z-20">
             <Button type="button" title="Book an appointment" variant="bg-blue-500" />
           </div>
         </div>
         {/* footer content */}
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-1 z-20 lg:grid-cols-4 gap-10 mb-10">
 
           {/* about us */}
           <div className="flex flex-col col-span-1 lg:col-span-2">
@@ -57,12 +57,13 @@ const Footer: React.FC = () => {
         </div>
         
         {/* copyright */}
-        <div className="bg-gradient-to-r from-black via-gray-700 to-black h-0.5 my-4"></div>
-        <div className="flexBetween text-gray-500">
-          <p>Copyright © 2023 Hyge, Pte. Ltd.</p>
-          <p>All Rights Reserved</p>
+        <div className="bg-gradient-to-r from-black/5 via-gray-700 to-black/5 h-0.5 my-4">
+          </div>
+            <div className="flexBetween text-gray-500">
+              <p>Copyright © 2023 Hyge, Pte. Ltd.</p>
+              <p>All Rights Reserved</p>
+            </div>
         </div>
-      </div>
     </footer>
   );
  };

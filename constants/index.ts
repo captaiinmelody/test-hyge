@@ -3,8 +3,8 @@ export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
     { href: '/services', key: 'services', label: 'Services' },
     { href: '/why-us', key: 'why_us', label: 'Why Us' },
-    { href: '/portofolio', key: 'our_porto', label: 'Our Portofolio' },
-    { href: '/clients', key: 'our_clients', label: 'Our Clients' },
+    { href: '/clients', key: 'our_clients', label: 'Our Process' },
+    { href: '/portofolio', key: 'our_porto', label: 'Our Work' },
     { href: '/faqs', key: 'faqs', label: 'FAQs' },
   ];
 
@@ -236,19 +236,19 @@ export const NAV_LINKS = [
   ]
   
   export const OUR_CLIENTS = [
-    {href: '', logo: '/clients/levare.png', label: '', colSpan: 'col-span-2'},
-    {href: '', logo: '/clients/shilindo.png', label: '', colSpan: 'col-span-2'},
-    {href: '', logo: '/clients/pelita_mitra_solusindo.png', label: '', colSpan: 'col-span-1'},
-    {href: '', logo: '/clients/elmoska.png', label: '', colSpan: 'col-span-1'},
-    {href: '', logo: '/clients/hayumi.png', label: '', colSpan: 'col-span-2'},
-    {href: '', logo: '/clients/sinar_abadi.png', label: '', colSpan: 'col-span-2'},
-    {href: '', logo: '/clients/asia_sinar_inti_abadi.png', label: '', colSpan: 'col-span-2'},
-    {href: '', logo: '/clients/pelita_jaya.png', label: '', colSpan: 'col-span-2'},
-    {href: '', logo: '/clients/aires_advanture.png', label: '', colSpan: 'col-span-3'},
-    {href: '', logo: '/clients/apix.png', label: '', colSpan: 'col-span-1'},
-    {href: '', logo: '/clients/airple_cleaning_2.png', label: '', colSpan: 'col-span-2'},
-    {href: '', logo: '/clients/united_rope.png', label: '', colSpan: 'col-span-1'},
-    {href: '', logo: '/clients/dymos.png', label: '', colSpan: 'col-span-1'},
+    {id: 1, href: '', logo: '/clients/levare.png', label: '', width: 128},
+    {id: 2,href: '', logo: '/clients/shilindo.png', label: '', width: 90},
+    {id: 3,href: '', logo: '/clients/pelita_mitra_solusindo.png', label: '', width: 36},
+    {id: 4,href: '', logo: '/clients/elmoska.png', label: '', width: 64},
+    {id: 5,href: '', logo: '/clients/hayumi.png', label: '', width: 106},
+    {id: 6,href: '', logo: '/clients/sinar_abadi.png', label: '', width: 164},
+    {id: 7,href: '', logo: '/clients/asia_sinar_inti_abadi.png', label: '', width: 32},
+    {id: 8,href: '', logo: '/clients/pelita_jaya.png', label: '', width: 150},
+    {id: 9,href: '', logo: '/clients/aires_advanture.png', label: '', width: 40},
+    {id: 10,href: '', logo: '/clients/apix.png', label: '', width: 66},
+    {id: 11,href: '', logo: '/clients/airple_cleaning_2.png', label: '', width: 98},
+    {id: 12,href: '', logo: '/clients/united_rope.png', label: '', width: 36},
+    {id: 13,href: '', logo: '/clients/dymos.png', label: '', width: 98},
   ]
   
   // FOOTER SECTION
